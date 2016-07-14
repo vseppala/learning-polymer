@@ -8,7 +8,7 @@ Polymer({
   },
 
   listeners: {
-    'tap': 'done'
+    'done-button.tap': 'done'
   },
 
   done: function (e) {
