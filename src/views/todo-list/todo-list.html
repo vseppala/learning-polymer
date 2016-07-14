@@ -9,12 +9,19 @@
       :host {
         display: block;
         padding: 10px;
+        max-width: 976px;
+        margin-left: auto;
+        margin-right: auto;
       }
     </style>
 
-    <div class="layout vertical">
-      <todo-card></todo-card>
-    </div>
+    <template class="layout vertical" is="dom-repeat" items="{{todos}}">
+      <todo-card
+        heading="{{item.heading}}"
+        content="{{item.content}}"
+        todoid={{index}}>
+      </todo-card>
+    </template>
 
   </template>
   <script type="text/javascript" src="todo-list.js"></script>
