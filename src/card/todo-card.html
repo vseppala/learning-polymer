@@ -1,0 +1,32 @@
+<link rel="import" href="/bower_components/polymer/polymer.html">
+<link rel="import" href="/bower_components/paper-card/paper-card.html">
+<link rel="import" href="/bower_components/paper-button/paper-button.html">
+<link rel="import" href="/bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+
+<dom-module id="todo-card">
+
+  <template>
+
+    <style include="iron-flex iron-flex-alignment">
+      :host {
+        flex: 1
+      }
+
+      paper-card {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    </style>
+
+    <paper-card heading="Emmental" animated="true">
+      <div class="card-content">
+        Emmentaler or Emmenttal, Switzerlase.
+      </div>
+      <div class="card-actions">
+        <paper-button>Done!</paper-button>
+      </div>
+    </paper-card>
+  </template>
+
+  <script type="text/javascript" src="todo-card.js"></script>
+</dom-module>
