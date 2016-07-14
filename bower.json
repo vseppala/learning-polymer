@@ -1,0 +1,21 @@
+{
+  "name": "learn-polymer",
+  "description": "My polymer learning project",
+  "main": "index.html",
+  "authors": [
+    "Ville Seppala <ville@villeseppala.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "^1.6.0",
+    "webcomponentsjs": "^0.7.22"
+  }
+}

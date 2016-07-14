@@ -1,0 +1,13 @@
+{
+  "name": "learn-polymer",
+  "version": "0.0.1",
+  "description": "My polymer learning project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ville Seppala <ville@villeseppala.com>",
+  "license": "MIT",
+  "dependencies": {
+  }
+}
