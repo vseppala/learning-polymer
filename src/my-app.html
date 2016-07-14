@@ -23,11 +23,11 @@
       <app-header reveals condenses effects="waterfall">
         <app-toolbar>
           <div main-title>My Todo App</div>
-          <paper-fab icon="add" title="Add"></paper-fab>
+          <paper-fab icon="add" title="Add" id="add-button"></paper-fab>
         </app-toolbar>
       </app-header>
 
-      <todo-list></todo-list>
+      <todo-list todos="{{todos}}"></todo-list>
     </app-header-layout>
   </template>
 
