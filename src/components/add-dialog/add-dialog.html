@@ -1,0 +1,35 @@
+<link rel="import" href="/bower_components/polymer/polymer.html">
+<link rel="import" href="/bower_components/paper-dialog/paper-dialog.html">
+<link rel="import" href="/bower_components/paper-input/paper-input.html">
+<link rel="import" href="/bower_components/neon-animation/animations/scale-up-animation.html">
+<link rel="import" href="/bower_components/neon-animation/animations/fade-out-animation.html">
+
+<dom-module id="add-dialog">
+
+  <template>
+    <style>
+      paper-dialog {
+        min-width: 400px;
+      }
+    </style>
+
+    <paper-dialog id="addDialog"
+      entry-animation="scale-up-animation"
+      exit-animation="fade-out-animation"
+      modal="true"
+      alwaysOnTop="true">
+      <h2>Add new Todo</h2>
+      <paper-dialog-scrollable>
+        <paper-input id="headingField" label="Heading"></paper-input>
+        <paper-input id="todoField" label="Todo"></paper-input>
+      </paper-dialog-scrollable>
+      <div class="buttons">
+        <paper-button dialog-dismiss>Cancel</paper-button>
+        <paper-button id="confirmAdd" dialog-confirm>Add</paper-button>
+      </div>
+    </paper-dialog>
+
+  </template>
+
+  <script type="text/javascript" src="add-dialog.js"></script>
+</dom-module>

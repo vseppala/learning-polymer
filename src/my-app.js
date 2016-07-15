@@ -2,8 +2,9 @@ Polymer({
   is: 'my-app',
 
   listeners: {
-    'add-button.tap': 'addNew',
-    'todoDone': 'removeTodo'
+    'todoDone': 'removeTodo',
+    'todoAdd': 'addNew',
+    'openAddDialog': 'openDialog'
   },
 
   ready: function () {
@@ -15,13 +16,12 @@ Polymer({
 
   addNew: function (e) {
     var todoClone = this.todos.slice(0);
-
-    todoClone.push({
-      heading: 'Added new one',
-      content: 'Added new todo entry with THE add button...'
-    });
-
+    todoClone.push(e.detail);
     this.todos = todoClone;
+  },
+
+  openDialog: function() {
+    this.$.addDialog.openDialog();
   },
 
   removeTodo: function (e) {
