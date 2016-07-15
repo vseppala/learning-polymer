@@ -9,8 +9,7 @@ Polymer({
 
   ready: function () {
     this.todos = [
-      {heading: 'Otsikko', content: 'Some content...'},
-      {heading: 'Otsikko', content: 'Some coasdntent...'}
+      {heading: 'Example Todo', content: 'Do something... please...'}
     ];
   },
 
